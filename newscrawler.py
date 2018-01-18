@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import urllib2
 import urlparse
 from bs4 import BeautifulSoup
@@ -10,8 +9,7 @@ class News(object):
 		self.searches = []
 		self.categories = []
 		self.news_array = ''
-		self.url = ''
-		
+		self.url = ''		
 
 class BBC(News):
 	def __init__(self):
@@ -62,10 +60,6 @@ class BBC(News):
 				pass
 
 		return result
-
-
-
-
 
 def main():
 	bbc = BBC()
